@@ -36,7 +36,7 @@ for ORIGINAL_IPA in "${ORIGINAL_IPAS[@]}"; do
     rm "${ITUNESMETADATA_TMP_FILE}"
 
     # Install the app
-    IOS_DEPLOY_INSTALL="${IOS_DEPLOY} --bundle ${ESCAPED_IPA_PATH}"
+    IOS_DEPLOY_INSTALL="${IOS_DEPLOY} -W --bundle ${ESCAPED_IPA_PATH}"
     echo "${IOS_DEPLOY_INSTALL}"
     eval "${IOS_DEPLOY_INSTALL}"
 
