@@ -50,7 +50,7 @@ for ORIGINAL_IPA in "${ORIGINAL_IPAS[@]}"; do
     fi
 
     # Uninstall the app
-    IOS_DEPLOY_UNINSTALL="${IOS_DEPLOY} --uninstall_only --bundle_id ${APP_BUNDLE_ID}"
+    IOS_DEPLOY_UNINSTALL="${IOS_DEPLOY} -W --uninstall_only --bundle_id ${APP_BUNDLE_ID}"
     echo "${IOS_DEPLOY_UNINSTALL}"
     eval "${IOS_DEPLOY_UNINSTALL}"
 done
